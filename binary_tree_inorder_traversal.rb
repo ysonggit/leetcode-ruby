@@ -32,3 +32,5 @@ c.right = d
 
 all_vals = inorder_traversal(a)
 all_vals.each {|x| print x }
+
+drawTree(a)
