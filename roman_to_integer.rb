@@ -3,6 +3,7 @@
 #iterate each char in given string, 
 #if current char is greater than previous char, then mimus 2 * number corresponding to previous char
 # otherwise, plus number corresponding to that char
+require "minitest/autorun"
 def roman_to_int(s)
   symbols = {
     "I" => 1,
@@ -26,4 +27,8 @@ def roman_to_int(s)
   return num
 end
 
-puts roman_to_int("MCMXCVI")
+class TestRomanToInteger < MiniTest::Test
+  def test_I
+    assert_equal(1996, roman_to_int("MCMXCVI"))
+  end
+end

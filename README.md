@@ -1,5 +1,11 @@
 # leetcode-ruby
 
+Minitest is used for unit test
+
+```bash
+gem install minitest
+```
+
 Ruby-Graphviz library needs to be installed in order to use drawTree() function
 
 Source at: https://github.com/glejeune/Ruby-Graphviz
